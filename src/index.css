@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,8 @@ body {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(197, 222, 223)
+
 }
 
 code {

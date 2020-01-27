@@ -1,0 +1,20 @@
+.item-block {
+  width: 50%;
+  border-bottom: 0.14rem solid rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-block:nth-child(2n - 1) {
+  border-right: 0.14rem solid rgb(230, 230, 230);
+}
+
+.item-block:nth-child(n + 5) {
+    border-bottom: 0;
+}
+
+.item-block .item-title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}

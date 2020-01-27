@@ -22,24 +22,34 @@ header {
 }
 
 .main-section {
-  padding: 4rem 8rem;
+  padding: 4rem 0rem;
   width: 80%;
   background: white;
 }
 
-.main-section div h1 {
-  padding-bottom: 4rem;
+.main-section .main-container .main-title {
+  padding: 0rem 8rem;
+  margin-bottom: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   text-align: center;
   font-size: 4rem;
 }
 
-.main-section div h2 {
+.main-section .main-container h2 {
+  padding: 0rem 8rem;
   margin: 1.5rem 0;
   font-size: 1.6rem;
 }
 
 .main-section p {
+  padding: 0rem 8rem;
   font-size: 1.3rem;
+}
+
+.main-section .main-container .item-block-list {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 0.14rem solid rgb(230, 230, 230);
+  border-bottom: 0.14rem solid rgb(230, 230, 230);
 }

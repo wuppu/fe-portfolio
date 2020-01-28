@@ -2,7 +2,7 @@ import React from "react";
 import ItemBlock from "../components/ItemBlock";
 
 function Home() {
-  const itemList = [1, 2, 3, 4, 5, 6, 7, 8];
+  const itemList = [1, 2, 3, 4, 5, 6, 7];
 
   return (
     <div className="main-container">

@@ -38,6 +38,7 @@
 .item-block .item-figure .item-img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 	transform: scale(1);
 	transition: .2s ease-in-out;
 }
@@ -46,6 +47,32 @@
 	transform: scale(1.1);
 }
 
-.item-block h2:hover {
-  color: rgb(50, 200, 200);
+@media screen and (max-width: 1300px) {
+  .item-block .item-figure {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .item-block .item-figure {
+    width: 60%;
+    height: 20rem;
+  }
+  .item-block {
+    width: 100%;
+  }
+  .item-block.right {
+    border-right: 0;
+  }
+  
+  .item-block.odd {
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .item-block .item-figure {
+    width: 80%;
+    height: 15rem;
+  }
 }

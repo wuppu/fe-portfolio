@@ -1,5 +1,5 @@
 main {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ header {
 }
 
 .main-section .main-container .main-title {
-  padding: 0rem 8rem;
+  margin: 0 2rem;
   margin-bottom: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
@@ -44,13 +44,17 @@ header {
   flex-direction: column;
 }
 .main-section .main-container h2 {
-  padding: 0rem 8rem;
+  margin: 0 2rem;
   margin-bottom: 3rem;
   font-size: 1.6rem;
   text-align: center;
+  transition: color 0.2s ease-in-out;
   color: rgb(100, 100, 100);
 }
 
+.main-section .main-container h2:hover {
+  color: rgb(50, 200, 200);
+}
 .main-section .common-content {
   width: 80%;
   line-height: 2.5rem;
@@ -68,12 +72,12 @@ header {
 
 .main-section .main-figure .main-img {
   width: 100%;
-	transform: scale(1);
-	transition: .2s ease-in-out;
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
 }
 
 .main-section .main-figure:hover .main-img {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .main-section .main-container .item-block-list {
@@ -83,4 +87,37 @@ header {
   margin: 6rem 0;
   border-top: 0.14rem solid rgb(230, 230, 230);
   border-bottom: 0.14rem solid rgb(230, 230, 230);
+}
+
+@media screen and (max-width: 1300px) {
+  .main-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-section .main-container .item-block-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 6rem 0;
+    border-top: 0.14rem solid rgb(230, 230, 230);
+    border-bottom: 0.14rem solid rgb(230, 230, 230);
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .main-section {
+    width: 100%;
+  }
+
+  .main-section .main-container .main-title {
+    font-size: 4rem;
+  }
 }

@@ -33,7 +33,6 @@ function App() {
 
   return (
     <main>
-      <p style={{fontSize:"1rem"}}>gu</p>
       <HashRouter>
         <header>Title</header>
         <Navigation links={links} />

@@ -1,5 +1,5 @@
 main {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,33 +23,64 @@ header {
 
 .main-section {
   padding: 4rem 0rem;
-  width: 80%;
+  width: 100rem;
   background: white;
 }
 
 .main-section .main-container .main-title {
   padding: 0rem 8rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.4rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
+  font-weight: 700;
 }
 
+.main-section .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .main-section .main-container h2 {
   padding: 0rem 8rem;
-  margin: 1.5rem 0;
+  margin-bottom: 3rem;
   font-size: 1.6rem;
+  text-align: center;
+  color: rgb(100, 100, 100);
 }
 
-.main-section p {
-  padding: 0rem 8rem;
+.main-section .common-content {
+  width: 80%;
+  line-height: 2.5rem;
   font-size: 1.3rem;
+  color: rgb(100, 100, 100);
+}
+
+.main-section .main-figure {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.main-section .main-figure .main-img {
+  width: 100%;
+	transform: scale(1);
+	transition: .2s ease-in-out;
+}
+
+.main-section .main-figure:hover .main-img {
+	transform: scale(1.05);
 }
 
 .main-section .main-container .item-block-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 6rem 0;
   border-top: 0.14rem solid rgb(230, 230, 230);
   border-bottom: 0.14rem solid rgb(230, 230, 230);
 }

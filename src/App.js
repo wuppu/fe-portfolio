@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
+import Project from "./routes/Project";
 
 function App() {
   const links = [
@@ -22,11 +23,17 @@ function App() {
       name: "CONTACT",
       path: "/contact",
       component: Contact
+    },
+    {
+      name: "PROJECT",
+      path: "/project",
+      component: Project
     }
   ];
 
   return (
     <main>
+      <p style={{fontSize:"1rem"}}>gu</p>
       <HashRouter>
         <header>Title</header>
         <Navigation links={links} />

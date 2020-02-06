@@ -30,7 +30,7 @@ function ItemBlock(props) {
         odd && last ? "odd" : ""
       } ${last ? "last" : ""}`}
     >
-      <h2 className="item-title">{title}</h2>
+      <h2 className="sub-title">{title}</h2>
       <figure className="item-figure">
         <img className="item-img" src={require(`../img/${img}`)} alt={img} />
       </figure>

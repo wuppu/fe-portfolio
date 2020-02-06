@@ -1,0 +1,107 @@
+.main-container .main-title {
+  margin: 0 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container .sub-title {
+  margin: 0 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+  color: rgb(100, 100, 100);
+}
+
+.main-container .sub-title:hover {
+  color: rgb(50, 200, 200);
+}
+
+.common-content {
+  width: 80%;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  color: rgb(100, 100, 100);
+}
+
+.common-content a {
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+}
+
+.common-content a::before {
+  content: "[링크] "
+}
+
+.common-content li li {
+  margin-left: 2rem;
+}
+
+.common-content h1 {
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+.common-content h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.main-figure {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.main-figure .main-img {
+  width: 100%;
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
+}
+
+.main-figure:hover .main-img {
+  transform: scale(1.05);
+}
+
+.main-container .item-block-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 6rem 0;
+  border-top: 0.14rem solid rgb(230, 230, 230);
+  border-bottom: 0.14rem solid rgb(230, 230, 230);
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container .item-block-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 6rem 0;
+    border-top: 0.14rem solid rgb(230, 230, 230);
+    border-bottom: 0.14rem solid rgb(230, 230, 230);
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .main-container .main-title {
+    font-size: 4rem;
+  }
+}

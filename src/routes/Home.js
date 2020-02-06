@@ -1,5 +1,6 @@
 import React from "react";
 import ItemBlock from "../components/ItemBlock";
+import "./SubPage.css";
 
 function Home() {
   const itemList = [1, 2, 3, 4, 5, 6, 7];
@@ -7,7 +8,7 @@ function Home() {
   return (
     <div className="main-container">
       <h1 className="main-title">This is Home</h1>
-      <h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+      <h2 className="sub-title">The standard Lorem Ipsum passage, used since the 1500s</h2>
       <figure className="main-figure">
         <img
           className="main-img"

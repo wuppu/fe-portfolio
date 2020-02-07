@@ -21,21 +21,29 @@ header {
   align-items: center;
 }
 
+.main-frame {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100rem;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
 
 .main-section {
   padding: 4rem 0rem;
-  width: 100rem;
+  width: 100%;
   background: white;
 }
 
 @media screen and (max-width: 1300px) {
-  .main-section {
+  .main-frame {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 714px) {
-  .main-section {
+  .main-frame {
     width: 100%;
   }
 }

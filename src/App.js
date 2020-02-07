@@ -35,14 +35,16 @@ function App() {
     <main>
       <HashRouter>
         <header>Title</header>
-        <Navigation links={links} />
-        <section className="main-section">
-          {links.map((link, index) => (
-            <Route key={index} path={link.path} exact>
-              <link.component />
-            </Route>
-          ))}
-        </section>
+        <div className="main-frame">
+          <Navigation links={links} />
+          <section className="main-section">
+            {links.map((link, index) => (
+              <Route key={index} path={link.path} exact>
+                <link.component />
+              </Route>
+            ))}
+          </section>
+        </div>
       </HashRouter>
     </main>
   );

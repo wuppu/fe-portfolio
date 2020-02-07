@@ -9,6 +9,7 @@ function Navigation({ links }) {
 
   return (
     <nav>
+      <div className={navOpen ? "nav-background-cover open" : "nav-background-cover"} onClick={() => setNavOpen(!navOpen)}></div>
       <ul className={navOpen ? "nav-links open" : "nav-links"}>
         {links.map((link, index) => (
           <NavLink
@@ -17,6 +18,7 @@ function Navigation({ links }) {
             to={link.path}
             className="link"
             activeClassName="link active"
+            onClick={() => setNavOpen(false)}
           >
             {link.name}
           </NavLink>

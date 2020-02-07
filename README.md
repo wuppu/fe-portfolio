@@ -1,68 +1,147 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# fe-portfolio
 
-## Available Scripts
+[Demo homepage](https://wuppu.github.io/fe-portfolio)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tools
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- react
+- gh-pages
+- react-markdown
+  - [rexxars: react-markdown](https://github.com/rexxars/react-markdown)
+- react-router-dom
+- react-syntax-highlighter
+  - [conorhastings: react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter)
+- axios
 
-### `npm test`
+- github api ver.3
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## About
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- github 에 올려둔 프로젝트와 파일들을 github api(ver.3) 를 통해 가져오고 markdown 변환을 통해 출력합니다.
+- 이 때, markdown 을 파싱하기 위해서 `react-markdown` 라이브러리를 사용하였습니다.
+- markdown 에서 코드 블럭에 있는 코드의 하이라이트를 표현하기 위해서 `react-syntax-highlighter` 라이브러리를 사용하였습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Project.js
 
-### `npm run eject`
+```jsx
+/* Project.js */
+import React, { Component } from "react";
+import ReactMarkdown from "react-markdown";
+import CodeBlock from "../components/CodeBlock";
+import InlineCode from "../components/InlineCode";
+import axios from "axios";
+import "./SubPage.css";
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+class Project extends Component {
+  state = {
+    readme: ""
+  };
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  getGithubReadme = async () => {
+    const {
+      data: { content }
+    } = await axios.get("https://api.github.com/repos/wuppu/react-study/readme");
+    const decodeReadme = decodeURIComponent(escape(window.atob(content)));
+    this.setState({readme: decodeReadme});
+  };
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  componentDidMount() {
+    this.getGithubReadme();
+  };
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  render() {    
+    const {readme} = this.state;
 
-## Learn More
+    return (
+        <ReactMarkdown 
+            className="common-content" 
+            source={readme} 
+            renderers={{code: CodeBlock, 
+                inlineCode: InlineCode}}/>
+    );
+  }
+}
+export default Project;
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `<ReactMarkdown/>` 의 옵션으로 `renderers` 를 사용자가 설정할 수 있습니다.
+- 옵션을 넣게 되면 만들어분 컴포넌트의 설정으로 웹에 표시됩니다.
+- 여기서 `code` 는 코드 블럭을 의미하며, `inlineCode` 는 " ` " 으로 표시된 코드를 의미합니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### CodeBlock.js
 
-### Analyzing the Bundle Size
+```jsx
+/* CodeBlock.js */
+import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { ghcolors as codeStyle } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+class CodeBlock extends PureComponent {
+  static propTypes = {
+    value: PropTypes.string.isRequired,
+    language: PropTypes.string
+  };
 
-### Making a Progressive Web App
+  static defaultProps = {
+    language: null
+  };
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+  render() {
+    const { language, value } = this.props;
+    return (
+      <SyntaxHighlighter language={language} style={codeStyle}>
+        {value}
+      </SyntaxHighlighter>
+    );
+  }
+}
 
-### Advanced Configuration
+export default CodeBlock;
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- `import` 할 때, `codeStyle` 를 바꿔주면 코드 블럭의 테마를 바꿔줄 수 있습니다.
+- `hljs` 는 JSX 파일에 대해서 하이라이트 적용되지 않기 때문에 `prism` 을 사용합니다.
+  - [PRISMJS](https://prismjs.com/)
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+### InlineCode.js
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```jsx
+/* InlineCode.js */
+import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
+
+class InlineCode extends PureComponent {
+  static propTypes = {
+    value: PropTypes.string.isRequired
+  };
+
+  render() {
+    const { value } = this.props;
+    return (
+      <code style={{ 
+                background: "rgb(240, 240, 240)", 
+                borderRadius: "0.3rem", 
+                fontSize: "1.1rem", 
+                padding: "0.3rem", 
+                fontWeight:"bold"
+            }}>
+        {value}
+      </code>
+    );
+  }
+}
+
+export default InlineCode;
+```
+
+
+

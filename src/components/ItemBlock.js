@@ -22,13 +22,14 @@ function ItemBlock(props) {
     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
 
-  const { right, odd, last, img, title } = props;
+  const { right, odd, last, img, title, inline, blink } = props;
 
   return (
     <div
-      className={`item-block ${right ? "right" : ""} ${
+      className={`item-block ${inline ? "inline" : ""} ${right ? "right" : ""} ${
         odd && last ? "odd" : ""
-      } ${last ? "last" : ""}`}
+      } ${last ? "last" : ""}` }
+      style={blink ? {opacity: 0} : {opacity: 1}}
     >
       <h2 className="sub-title">{title}</h2>
       <figure className="item-figure">

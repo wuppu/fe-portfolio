@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import ReactMarkdown from "react-markdown";
 import CodeBlock from "../components/CodeBlock";
 import InlineCode from "../components/InlineCode";
-import axios from "axios";
 import ItemBlock from "../components/ItemBlock";
+import axios from "axios";
 import "./SubPage.css";
 
 class Project extends Component {

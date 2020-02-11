@@ -78,15 +78,6 @@
   transform: scale(1.05);
 }
 
-.main-container .item-block-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 6rem 0;
-  border-top: 0.14rem solid rgb(230, 230, 230);
-  border-bottom: 0.14rem solid rgb(230, 230, 230);
-}
-
 @media screen and (max-width: 1000px) {
   .main-container .item-block-list {
     display: flex;

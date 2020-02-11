@@ -1,9 +1,8 @@
 import React from "react";
-import ItemBlock from "../components/ItemBlock";
+import ItemList from "../components/ItemList";
 import "./SubPage.css";
 
 function Home() {
-  const itemList = [1, 2, 3, 4, 5, 6, 7];
 
   return (
     <div className="main-container">
@@ -37,26 +36,7 @@ function Home() {
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <div className="item-block-list">
-        {itemList.map((item, index) => (
-          <ItemBlock
-            key={index}
-            title={`Item #${item}`}
-            right={index % 2 === 0 ? true : false}
-            odd={itemList.length % 2 === 1 ? true : false}
-            last={
-              itemList.length % 2 === 1
-                ? index > itemList.length - 2
-                  ? true
-                  : false
-                : index > itemList.length - 3
-                ? true
-                : false
-            }
-            img={"Home_img.jpg"}
-          />
-        ))}
-      </div>
+      <ItemList/>
     </div>
   );
 }

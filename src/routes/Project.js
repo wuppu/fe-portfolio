@@ -10,7 +10,8 @@ class Project extends Component {
   itemList = [1, 2, 3, 4, 5, 6, 7];
   state = {
     readme: "",
-    date: ""
+    date: "",
+    files: []
   };
 
   dateToStr = date => {
@@ -31,6 +32,21 @@ class Project extends Component {
 
     return `${yyyy}-${mm}-${dd} ${weekday[day]} | ${hour}:${min}:${sec}`;
   };
+
+  createTitle = (value) => {
+    const ret = value.replace("_", ". ").replace(/_/g, " ").replace(".cpp", "");
+    return `[BOJ] ${ret}`;
+  }
+
+  getGithubFiles = async () => {
+    const {data} = await axios.get("https://api.github.com/repos/wuppu/Algorithms/contents/BOJ");
+    const files = data.filter(({name}) => {
+      return name.indexOf('cpp') !== -1;
+    }).slice(0, 10);
+
+    this.setState({files: files});
+  }
+
   getGithubReadme = async () => {
     const {
       data: { content }
@@ -50,10 +66,11 @@ class Project extends Component {
 
   componentDidMount() {
     this.getGithubReadme();
+    this.getGithubFiles();
   }
 
   render() {
-    const { readme, date } = this.state;
+    const { readme, date, files } = this.state;
 
     return (
       <div className="main-container">
@@ -77,22 +94,23 @@ class Project extends Component {
         />
 
         <div className="item-block-list">
-          {this.itemList.map((item, index) => (
+          {files.map(({name}, index) => (
             <ItemBlock
               key={index}
-              title={`Item #${item}`}
+              title={this.createTitle(name)}
               right={index % 2 === 0 ? true : false}
-              odd={this.itemList.length % 2 === 1 ? true : false}
+              odd={files.length % 2 === 1 ? true : false}
               last={
-                this.itemList.length % 2 === 1
-                  ? index > this.itemList.length - 2
+                files.length % 2 === 1
+                  ? index > files.length - 2
                     ? true
                     : false
-                  : index > this.itemList.length - 3
+                  : index > files.length - 3
                   ? true
                   : false
               }
               img={"Home_img.jpg"}
+              preview={`https://www.acmicpc.net/problem/${name.split("_")[0]}`}
             />
           ))}
         </div>

@@ -22,3 +22,10 @@
   background: gray;
   cursor: pointer;
 }
+
+@media screen and (max-width: 714px) {
+  .list-toggle {
+    display: none;
+    pointer-events: none;
+  }
+}

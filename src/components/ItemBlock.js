@@ -22,7 +22,7 @@ function ItemBlock(props) {
     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
 
-  const { right, odd, last, img, title, inline, blink } = props;
+  const { right, odd, last, img, title, preview = content, inline, blink } = props;
 
   return (
     <div
@@ -35,7 +35,7 @@ function ItemBlock(props) {
       <figure className="item-figure">
         <img className="item-img" src={require(`../img/${img}`)} alt={img} />
       </figure>
-      <p>{`${content.slice(0, 150)}...`}</p>
+      <p>{`${preview.slice(0, 150)}...`}</p>
     </div>
   );
 }

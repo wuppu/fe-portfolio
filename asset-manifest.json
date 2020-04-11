@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fe-portfolio/static/css/main.c302cba4.chunk.css",
+    "main.css": "/fe-portfolio/static/css/main.c1ed4499.chunk.css",
     "main.js": "/fe-portfolio/static/js/main.8e8b9c03.chunk.js",
     "main.js.map": "/fe-portfolio/static/js/main.8e8b9c03.chunk.js.map",
     "runtime-main.js": "/fe-portfolio/static/js/runtime-main.1dd45a6c.js",
@@ -8,9 +8,9 @@
     "static/js/2.7ec3676e.chunk.js": "/fe-portfolio/static/js/2.7ec3676e.chunk.js",
     "static/js/2.7ec3676e.chunk.js.map": "/fe-portfolio/static/js/2.7ec3676e.chunk.js.map",
     "index.html": "/fe-portfolio/index.html",
-    "precache-manifest.195389595dbe5bb11e18221b5af48d40.js": "/fe-portfolio/precache-manifest.195389595dbe5bb11e18221b5af48d40.js",
+    "precache-manifest.c31995c40110fa22b0b3fbaafbbcb335.js": "/fe-portfolio/precache-manifest.c31995c40110fa22b0b3fbaafbbcb335.js",
     "service-worker.js": "/fe-portfolio/service-worker.js",
-    "static/css/main.c302cba4.chunk.css.map": "/fe-portfolio/static/css/main.c302cba4.chunk.css.map",
+    "static/css/main.c1ed4499.chunk.css.map": "/fe-portfolio/static/css/main.c1ed4499.chunk.css.map",
     "static/js/2.7ec3676e.chunk.js.LICENSE": "/fe-portfolio/static/js/2.7ec3676e.chunk.js.LICENSE",
     "static/media/Algorithm_img.jpg": "/fe-portfolio/static/media/Algorithm_img.974399a8.jpg",
     "static/media/CPP.png": "/fe-portfolio/static/media/CPP.0798d69a.png",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.1dd45a6c.js",
     "static/js/2.7ec3676e.chunk.js",
-    "static/css/main.c302cba4.chunk.css",
+    "static/css/main.c1ed4499.chunk.css",
     "static/js/main.8e8b9c03.chunk.js"
   ]
 }

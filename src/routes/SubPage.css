@@ -14,6 +14,11 @@
   align-items: center;
   flex-direction: column;
 }
+
+.main-container video {
+  width: 100%;
+}
+
 .main-container .sub-title {
   margin: 0 2rem;
   margin-bottom: 3rem;
@@ -28,6 +33,7 @@
 }
 
 .common-content {
+  font-family: "Poppins", sans-serif;
   width: 80%;
   line-height: 2.5rem;
   font-size: 1.3rem;
@@ -39,8 +45,8 @@
   color: rgb(100, 100, 100);
 }
 
-.common-content a::before {
-  content: "[링크] "
+.common-content .ul {
+  list-style: none;
 }
 
 .common-content li li {
@@ -58,6 +64,13 @@
   margin-bottom: 1rem;
 }
 
+.sort-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main-figure {
   width: 80%;
   display: flex;
@@ -68,6 +81,19 @@
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
+.sub-figure {
+  height: 10rem;
+  width: 10rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  
+}
+
 .main-figure .main-img {
   width: 100%;
   transform: scale(1);
@@ -75,6 +101,16 @@
 }
 
 .main-figure:hover .main-img {
+  transform: scale(1.05);
+}
+
+.sub-figure .sub-img {
+  height: 8rem;
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
+}
+
+.sub-figure:hover .sub-img {
   transform: scale(1.05);
 }
 
@@ -94,5 +130,9 @@
 @media screen and (max-width: 714px) {
   .main-container .main-title {
     font-size: 4rem;
+  }
+
+  .main-figure {
+    width: 100%;
   }
 }

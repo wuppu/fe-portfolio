@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 main {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -40,10 +42,16 @@ header {
   .main-frame {
     width: 90%;
   }
+  header {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 714px) {
   .main-frame {
     width: 100%;
+  }
+  header {
+    font-size: 3rem;
   }
 }

@@ -1,25 +1,38 @@
 {
   "files": {
-    "main.css": "/fe-portfolio/static/css/main.27a83f6b.chunk.css",
-    "main.js": "/fe-portfolio/static/js/main.641ca36a.chunk.js",
-    "main.js.map": "/fe-portfolio/static/js/main.641ca36a.chunk.js.map",
+    "main.css": "/fe-portfolio/static/css/main.79178448.chunk.css",
+    "main.js": "/fe-portfolio/static/js/main.e6dbfee9.chunk.js",
+    "main.js.map": "/fe-portfolio/static/js/main.e6dbfee9.chunk.js.map",
     "runtime-main.js": "/fe-portfolio/static/js/runtime-main.1dd45a6c.js",
     "runtime-main.js.map": "/fe-portfolio/static/js/runtime-main.1dd45a6c.js.map",
-    "static/js/2.14e22597.chunk.js": "/fe-portfolio/static/js/2.14e22597.chunk.js",
-    "static/js/2.14e22597.chunk.js.map": "/fe-portfolio/static/js/2.14e22597.chunk.js.map",
+    "static/js/2.7ec3676e.chunk.js": "/fe-portfolio/static/js/2.7ec3676e.chunk.js",
+    "static/js/2.7ec3676e.chunk.js.map": "/fe-portfolio/static/js/2.7ec3676e.chunk.js.map",
     "index.html": "/fe-portfolio/index.html",
-    "precache-manifest.8dc3ae021db6925d3833c1916ea0a03f.js": "/fe-portfolio/precache-manifest.8dc3ae021db6925d3833c1916ea0a03f.js",
+    "precache-manifest.524273b72891ab5c4b0c43c63996fba6.js": "/fe-portfolio/precache-manifest.524273b72891ab5c4b0c43c63996fba6.js",
     "service-worker.js": "/fe-portfolio/service-worker.js",
-    "static/css/main.27a83f6b.chunk.css.map": "/fe-portfolio/static/css/main.27a83f6b.chunk.css.map",
-    "static/js/2.14e22597.chunk.js.LICENSE": "/fe-portfolio/static/js/2.14e22597.chunk.js.LICENSE",
+    "static/css/main.79178448.chunk.css.map": "/fe-portfolio/static/css/main.79178448.chunk.css.map",
+    "static/js/2.7ec3676e.chunk.js.LICENSE": "/fe-portfolio/static/js/2.7ec3676e.chunk.js.LICENSE",
     "static/media/Algorithm_img.jpg": "/fe-portfolio/static/media/Algorithm_img.974399a8.jpg",
+    "static/media/CPP.png": "/fe-portfolio/static/media/CPP.0798d69a.png",
+    "static/media/CPP.svg": "/fe-portfolio/static/media/CPP.5be9bde4.svg",
+    "static/media/CS.png": "/fe-portfolio/static/media/CS.4f4b4b00.png",
+    "static/media/CS.svg": "/fe-portfolio/static/media/CS.afa245f5.svg",
+    "static/media/CSS3.svg": "/fe-portfolio/static/media/CSS3.3707da3c.svg",
+    "static/media/CSS3.png": "/fe-portfolio/static/media/CSS3.7053ba9b.png",
+    "static/media/HTML5.svg": "/fe-portfolio/static/media/HTML5.676e8188.svg",
+    "static/media/HTML5.png": "/fe-portfolio/static/media/HTML5.f991feaa.png",
     "static/media/Home_img.jpg": "/fe-portfolio/static/media/Home_img.0df165c7.jpg",
-    "static/media/city_art_sky_127834_1920x1080.jpg": "/fe-portfolio/static/media/city_art_sky_127834_1920x1080.1521219f.jpg"
+    "static/media/JS.svg": "/fe-portfolio/static/media/JS.7fd50466.svg",
+    "static/media/JS.png": "/fe-portfolio/static/media/JS.845bb33b.png",
+    "static/media/REACT.png": "/fe-portfolio/static/media/REACT.36facaf6.png",
+    "static/media/city_art_sky_127834_1920x1080.jpg": "/fe-portfolio/static/media/city_art_sky_127834_1920x1080.1521219f.jpg",
+    "static/media/unity-69.svg": "/fe-portfolio/static/media/unity-69.c01d1638.svg",
+    "static/media/unity.png": "/fe-portfolio/static/media/unity.776dbb2b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1dd45a6c.js",
-    "static/js/2.14e22597.chunk.js",
-    "static/css/main.27a83f6b.chunk.css",
-    "static/js/main.641ca36a.chunk.js"
+    "static/js/2.7ec3676e.chunk.js",
+    "static/css/main.79178448.chunk.css",
+    "static/js/main.e6dbfee9.chunk.js"
   ]
 }

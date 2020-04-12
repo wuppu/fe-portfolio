@@ -7,7 +7,7 @@ import ItemBlock from "./ItemBlock";
 function ItemList() {
   const [listToggle, setListToggle] = useState(true);
   const [blink, setBlink] = useState(false);
-  const itemList = [1, 2, 3, 4, 5, 6, 7];
+  // const itemList = [1, 2, 3, 4, 5, 6, 7];
   
   const projectList = [
     {
@@ -23,27 +23,27 @@ function ItemList() {
     {
       title: "[프로젝트, C#, Unity3D] 인공지능 탁구 머신 시뮬레이션",
       thumnail: "ml-agent",
-      content: "프로젝트, Unity3D ML-agent 활용한 인공지능 탁구 머신 시뮬레이션..."
+      content: "Unity 에서 제공하는 ML-agent(Machine Learning Agent)를 통해 심층강화학습으로 인공지능 탁구로봇을 구현하는 프로젝트입니다. 역기구학(Inverse Kinematics) 구현 및 로봇 팔 디자인, 강화학습 진행"
     },
     {
       title: "[프로젝트, C#, Windows Form] 네트워크 스위치 모니터링 프로그램",
       thumnail: "switch-monitor",
-      content: "프로젝트, C# Windows Form 네트워크 스위치 모니터링 프로그램..."
+      content: "가상 네트워크를 만들고 스위치의 데이터를 조회/수정, 모니터링하는 프로그램을 Windows 플랫폼 애플리케이션으로 개발하였습니다. UI/UX 수정, 네트워크 스위치 데이터 조회/수정, 모니터링 구현"
     },
     {
       title: "[프로젝트, 웹, HTML, CSS, Javascript] 네트워크 스위치 모니터링 프로그램",
       thumnail: "switch-monitor-web",
-      content: "프로젝트, 웹, HTML, CSS, JAvascript 네트워크 스위치 모니터링 프로그램..."
+      content: "가상 네트워크를 만들고 스위치의 데이터를 조회/수정, 모니터링하는 프로그램을 웹 기반 애플리케이션으로 개발하였습니다. 기존의 Windows 플랫폼으로 개발했던 애플리케이션의 기능을 똑같이 수행할 수 있도록 개발하였습니다. Bootstrap 라이브러리를 사용하여, 반응형 및 디자인을 단순화하여 진행했습니다."
     }
   ]
 
-  const clickHandle = () => {
-    setBlink(true);
-    setTimeout(() => {
-      setBlink(false);
-      setListToggle(!listToggle);
-    }, 500);
-  }
+  // const clickHandle = () => {
+  //   setBlink(true);
+  //   setTimeout(() => {
+  //     setBlink(false);
+  //     setListToggle(!listToggle);
+  //   }, 500);
+  // }
 
   return (
     <div className="item-container">

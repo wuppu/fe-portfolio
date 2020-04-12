@@ -20,7 +20,7 @@ function MLAgent() {
         <h3>대학교 종합설계프로젝트</h3>
         <br></br>
         <h3>사용 언어</h3>
-        <p>C#</p>
+        <p><b>C#</b></p>
         <br></br>
         <h3>사용 툴</h3>
         <p>Unity3D</p>
@@ -36,7 +36,7 @@ function MLAgent() {
         <p>만들어진 로봇 팔로 강화학습 진행</p>
         <br></br>
         <h3>Github</h3>
-        <a href="https://github.com/wuppu/Table_tennis_ML" target="_blank">
+        <a href="https://github.com/wuppu/Table_tennis_ML" target="_blank" rel="noopener noreferrer">
           github.com/wuppu/Table_tennis_ML
         </a>
         <br></br>

@@ -28,7 +28,7 @@ function Scratch() {
         <h3>대학교 종합설계프로젝트</h3>
         <br></br>
         <h3>사용 언어</h3>
-        <p>C#</p>
+        <p><b>C#</b></p>
         <br></br>
         <h3>사용 툴</h3>
         <p>Unity3D</p>
@@ -42,13 +42,13 @@ function Scratch() {
         <p>연결된 코드 블록을 확인하여 오류 검출기 구현</p>        
         <br></br>
         <h3>Github</h3>
-        <a href="https://github.com/wuppu/Scratch" target="_blank">
+        <a href="https://github.com/wuppu/Scratch" target="_blank" rel="noopener noreferrer">
           github.com/wuppu/Scratch
         </a>
         <br></br>
         <br></br>
         <h3>Trello</h3>
-        <a href="https://trello.com/b/eWMVJfBg/scratch-project" target="_blank">
+        <a href="https://trello.com/b/eWMVJfBg/scratch-project" target="_blank" rel="noopener noreferrer">
           trello.com/b/eWMVJfBg/scratch-project
         </a>
       </div>

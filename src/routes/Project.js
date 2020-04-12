@@ -7,7 +7,6 @@ function Project() {
   return (
     <div className="main-container">
       <h1 className="main-title">Project</h1>
-      <h2 className="sub-title">수행 프로젝트</h2>
       <figure className="main-figure">
         <img
           className="main-img"

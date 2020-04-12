@@ -16,26 +16,26 @@ function Algorithm() {
       </figure>
       <div className="common-content">
         <h3>사용 언어</h3>
-        <p>C++</p>
+        <p><b>C++</b></p>
         <p>
           1년간 C++ 로 알고리즘 문제를 풀며, 깃 허브에 정리하고 있습니다. 주로
           백준(
-          <a href="https://acmicpc.net" target="_blank">
+          <a href="https://acmicpc.net" target="_blank" rel="noopener noreferrer">
             acmicpc.net
           </a>
           ), 프로그래머스(
-          <a href="https://programmers.co.kr" target="_blank">
+          <a href="https://programmers.co.kr" target="_blank" rel="noopener noreferrer">
             programmers.co.kr
           </a>
           )에서 문제를 풀고 있습니다. 그리고 추가적으로 CodeForces(
-          <a href="https://codeforces.com" target="_blank">
+          <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer">
             codeforces.com
           </a>
           )에서 주기적으로 진행하는 코딩 테스트를 통해 공부하고 있습니다.
         </p>
         <br></br>
         <h3>Github</h3>
-        <a href="https://github.com/wuppu/Algorithms" target="_blank">
+        <a href="https://github.com/wuppu/Algorithms" target="_blank" rel="noopener noreferrer">
           github.com/wuppu/Algorithms
         </a>
       </div>

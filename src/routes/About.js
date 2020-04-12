@@ -2,16 +2,16 @@ import React from "react";
 import "./SubPage.css";
 
 function About() {
-  const itemList = [1, 2, 3, 4, 5, 6, 7];
+  // const itemList = [1, 2, 3, 4, 5, 6, 7];
 
   return (
     <div className="main-container">
       <h1 className="main-title">About</h1>
-      <h2 className="sub-title">Personal Data & Skill Stack</h2>
+      <h2 className="sub-title">Personal Data & Skills</h2>
       <figure className="main-figure">
         <img className="main-img" src={require("../img/Home_img.jpg")} alt="" />
       </figure>
-      <pre className="common-content" style={{ whiteSpace: "pre-wrap" }}>
+      <div className="common-content" style={{textAlign: "center"}}>
         <h3>이름</h3>
         <p>김 주 영 (Kim Juyoung)</p>
         <br></br>
@@ -59,41 +59,35 @@ function About() {
             <h3>C++</h3>
             <p>
               알고리즘 & 자료구조 문제를 풀면서 개인학습 (
-              <a href="https://github.com/wuppu/Algorithms" target="_blank">
+              <a href="https://github.com/wuppu/Algorithms" target="_blank" rel="noopener noreferrer">
                 https://github.com/wuppu/Algorithms
               </a>
               )
             </p>
           </li>
+          <br></br>
           <li>
             <h3>C#</h3>
             <p>Windows 플랫폼 애플리케이션 프로젝트 진행</p>
           </li>
+          <br></br>
           <li>
-            <h3>HTML5 CSS3 Javascript</h3>
+            <h3>HTML5 / CSS3 / Javascript</h3>
             <p>웹 프론트엔드 독학 및 프로젝트 진행</p>
           </li>
+          <br></br>
           <li>
             <h3>Unity3D</h3>
             <p>게임 개발 및 애플리케이션 구현</p>
           </li>
+          <br></br>
           <li>
             <h3>React</h3>
             <p>웹 프론트엔드 프레임워크 독학 및 개인 프로젝트 진행</p>
           </li>
         </ul>
         <br></br>
-        <h3>Github</h3>
-        <a href="https://github.com/wuppu" target="_blank">
-          <p>https://github.com/wuppu</p>
-        </a>
-        <h3>Blog</h3>
-        <a href="https://blog.naver.com/wndud1640" target="_blank">
-          <p>https://blog.naver.com/wndud1640</p>
-        </a>
-        <h3>E-mail</h3>
-        <p>wndud1640@gmail.com (wndud1640@naver.com)</p>
-      </pre>
+      </div>
     </div>
   );
 }

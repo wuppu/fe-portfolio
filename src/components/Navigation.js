@@ -13,8 +13,8 @@ function Navigation({ links }) {
       <ul className={navOpen ? "nav-links open" : "nav-links"}>
         {links.map((link, index) => (
           <NavLink
+            exact={link.path === "/" ? true : false}
             key={index}
-            exact
             to={link.path}
             className="link"
             activeClassName="link active"

@@ -4,7 +4,7 @@ import { HashRouter, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./routes/Home";
 import About from "./routes/About";
-
+import Contact from "./routes/Contact"
 import Algorithm from "./routes/projectContent/Algorithm";
 import Scratch from "./routes/projectContent/Scratch";
 import MLAgent from "./routes/projectContent/MLAgent";
@@ -30,6 +30,11 @@ function App() {
       name: "PROJECT",
       path: "/project",
       component: Project
+    },
+    {
+      name: "CONTACT",
+      path: "/contact",
+      component: Contact
     }
   ];
 

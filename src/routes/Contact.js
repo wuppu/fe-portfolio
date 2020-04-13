@@ -11,7 +11,7 @@ function Contact() {
       <figure className="main-figure">
         <img
           className="main-img"
-          src={require("../img/city_art_sky_127834_1920x1080.jpg")}
+          src={require("../img/main3.jpg")}
           alt=""
         />
       </figure>

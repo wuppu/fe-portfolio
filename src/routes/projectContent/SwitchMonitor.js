@@ -17,7 +17,7 @@ function SwitchMonitor() {
         />
       </figure>
       <p className="common-content">
-        <h3>전자부품연구원 개인 프로젝트</h3>
+        <h3>전자부품연구원 프로젝트</h3>
         <br></br>
         <h3>사용 언어</h3>
         <p><b>C#</b></p>

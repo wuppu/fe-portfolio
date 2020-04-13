@@ -5,15 +5,14 @@ import "./SubPage.css";
 function Home() {
   return (
     <div className="main-container">
-      <h1 className="main-title">Home</h1>
       <figure className="main-figure">
         <img
           className="main-img"
           src={require("../img/main.jpg")}
           alt=""
         />
-        <p style={{position: "absolute", transform: "translate(0, 13rem)", color: "white", fontSize: "2.5rem", fontWeight:"500", borderBottom: ".2rem solid white"}}>KIM JUYOUNG</p>
-        <p style={{position: "absolute", transform: "translate(0, 17rem)", color: "white", fontSize: "5rem", fontWeight:"700"}}>DEV PORTFOLIO</p>
+        <p style={{position: "absolute", top: "30%", transform: "translate(0, 30%)", color: "white", fontWeight:"500", borderBottom: ".2rem solid white"}}>KIM JUYOUNG</p>
+        <p style={{position: "absolute", top: "40%", transform: "translate(0, 40%)", color: "white", fontWeight:"700"}}>DEV PORTFOLIO</p>
       </figure>
       <h2 className="sub-title">About</h2>
       <div className="common-content" style={{ textAlign: "center" }}>

@@ -7,7 +7,6 @@ function About() {
   return (
     <div className="main-container">
       <h1 className="main-title">About</h1>
-      <h2 className="sub-title">Personal Data & Skills</h2>
       <figure className="main-figure">
         <img className="main-img" src={require("../img/Home_img.jpg")} alt="" />
       </figure>
